@@ -42,3 +42,12 @@ export interface Product {
     reviews?: Review[];
   }
   
+  // export type PaginationProps = {
+  //   current: number ;
+  //   pageSize: number;
+  //   pageSizeOptions: string[];
+  //   showSizeChanger: boolean;
+  //   total: number;
+  // };
+  
+  
