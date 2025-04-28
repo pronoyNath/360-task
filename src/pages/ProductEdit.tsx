@@ -52,7 +52,7 @@ const ProductEdit: React.FC = () => {
       const res = await updateProduct({ id: productId, data: values }).unwrap();
       console.log(res)
       if(res){
-          toast.success("success") 
+          toast.success("Product updated successfully!") 
       }
       notification.success({
         message: 'Success',
