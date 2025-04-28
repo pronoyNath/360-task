@@ -18,7 +18,9 @@ export interface Product {
     id?: number;
     text: string;
     rating: number;
-    username: string;
+    reviewerName: string;
+    date: string;
+    comment: string;
   }
   
   export interface ProductsResponse {
@@ -50,4 +52,11 @@ export interface Product {
   //   total: number;
   // };
   
+  export type CategoryObject = {
+    slug: string;
+    name: string;
+    url: string;
+  };
+  
+  export type CategoryType = string | CategoryObject;
   
