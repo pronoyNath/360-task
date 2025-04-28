@@ -37,7 +37,7 @@ const ProductDetail: React.FC = () => {
 
   // Helper function to handle category display
   const renderCategory = (category: CategoryType) => {
-    console.log(category)
+    // console.log(category)
     if (typeof category === "string") {
       return category;
     }
@@ -174,10 +174,10 @@ const ProductDetail: React.FC = () => {
             <div>
               <Title level={4}>Reviews ( {product?.reviews?.length} )</Title>
               {product.reviews && product.reviews.length > 0 ? (
-                <div className="space-y-4">
+                <div className="space-y-4 ">
                   {product.reviews.map((review, index) => (
-                    <Card key={index} size="small" className="bg-gray-50">
-                      <div className="flex flex-col gap-2">
+                    <Card key={index} size="small" className="bg-gray-50 ">
+                      <div className="flex flex-col gap-2 ">
                         <div className="flex flex-col md:flex-row items-center justify-between">
                           <div className="text-center md:text-left flex flex-col gap-1">
                             <Text strong>{review?.reviewerName}</Text>
